@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي التقني - HTB & Kali</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 850px; margin: auto; }
+
+        /* ستايل الكروت الكرتوني */
+        .card {
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 4px solid #334155;
+            box-shadow: 10px 10px 0px #000;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            border-color: #38bdf8;
+            box-shadow: 15px 15px 0px #38bdf8;
+        }
+
+        /* تنسيق الصور لتكون متوافقة */
+        .img-box {
+            background: #0f172a;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            border: 2px solid #334155;
+            min-height: 200px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        /* مظهر التيرمينال الهكر */
+        .terminal {
+            background: #000;
+            color: #4ade80;
+            padding: 20px;
+            border-radius: 15px;
+            font-family: 'Courier New', monospace;
+            direction: ltr; text-align: left;
+            border: 1px solid #38bdf8;
+            box-shadow: inset 0 0 10px rgba(74, 222, 128, 0.2);
+        }
+
+        h2 { color: #38bdf8; text-shadow: 2px 2px #000; margin-top: 0; }
+        .info-text { color: #fbbf24; font-weight: bold; font-size: 1.2rem; }
+
+        /* أيقونة كرتونية ثابتة */
+        .lottie-float {
+            position: fixed; bottom: 20px; right: 20px; z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card" data-aos="zoom-in">
+        <h2 style="color: #fbbf24;">بيانات التواصل</h2>
+        <p class="info-text">📧 ansm8482@gmail.com</p>
+        <p class="info-text">📞 01068271338</p>
+    </div>
+
+    <div class="card" data-aos="fade-right">
+        <h2>WiFi Info</h2>
+        <p style="font-size: 1.8rem; color: #4ade80;">📶 0101068271338</p>
+        <div class="img-box">
+            <img src="kali.png" alt="Kali Linux Logo">
+        </div>
+    </div>
+
+    <div class="card" data-aos="fade-left">
+        <h2 style="display:flex; align-items:center; gap:15px;">
+            Hack The Box
+            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_mo9sqpbc.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+        </h2>
+        <div class="terminal">sudo openvpn machines_us-3.ovpn</div>
+        
+        <a href="machines_us-3.ovpn" download style="text-decoration: none;">
+            <div class="img-box" style="background: rgba(56, 189, 248, 0.1); border: 2px dashed #38bdf8; cursor: pointer;">
+                <div style="text-align: center;">
+                    <span style="font-size: 50px;">📥</span>
+                    <p style="color: #38bdf8; font-weight: bold;">اضغط هنا لتحميل ملف HTB</p>
+                    <p style="font-size: 0.8rem; color: #64748b;"><a href="machines_us-3.ovpn" download style="text-decoration: none;"></p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="card" data-aos="flip-up">
+        <div class="img-box">
+            <img src="kali-desktop-kde.jpg" alt="Terminal Desktop">
+        </div>
+        <h2>Terminal Ops</h2>
+        <p>📂 عرض الملفات:</p>
+        <div class="terminal">
+            1: sudo mkdir /mnt/my_kali<br>
+            2: sudo mount /dev/sda1 /mnt/my_kali<br>
+            3: ls /mnt/my_kali
+        </div>
+        <p style="margin-top: 15px;">🚀 نقل الملفات:</p>
+        <div class="terminal">
+            sudo cp -r /home/kali/Downloads/. /mnt/my_kali/
+        </div>
+    </div>
+
+</div>
+
+<div class="lottie-float">
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_m6cuL6.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true
+    });
+</script>
+
+</body>
+</html>
