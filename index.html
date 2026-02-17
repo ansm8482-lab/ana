@@ -117,16 +117,21 @@
         <h2>Terminal Ops</h2>
         <p>📂 عرض الملفات:</p>
         <div class="terminal">
-            1: sudo mkdir /mnt/my_kali<br>
-            2: sudo mount /dev/sda1 /mnt/my_kali<br>
-            3: ls /mnt/my_kali
+             sudo mkdir /mnt/my_kali<br>
+
+             sudo mount /dev/sda1 /mnt/my_kali<br>
+
+             ls /mnt/my_kali
         </div>
         <p style="margin-top: 15px;">🚀 نقل الملفات:</p>
         <div class="terminal">
-            sudo mount -o remount,rw /dev/sda1 /mnt/my_kali
-            sudo cp -r /home/kali/Downloads/. /mnt/my_kali/
+            sudo mount -o remount,rw /dev/sda1 /mnt/my_kali <br>
+            sudo cp -r /home/kali/Downloads/. /mnt/my_kali/<br>
+             
+           <p style="margin-top: 15px;">VS Code </p>
+             rm -rf ~/.vscode </p>
 
-
+             ln -s /mnt/my_kali/.vscode ~/.vscode </p>
         </div>
     </div>
 
@@ -142,9 +147,9 @@
         <p style="margin-top: 15px;">Username and PassWord</p>
         <div class="terminal">
             
-            User Name : DeepFigSiren
-               .       .              .
-            PassWord :Anasmohamed@123
+            User Name : DeepFigSiren<br>
+               
+            PassWord :Anasmohamed@123<br>
 
 
         </div>
@@ -159,9 +164,9 @@
         
         <div class="terminal">
             
-            1: sudo killall openvpn
-               .       .              .
-            2: for i in {0..10}; do sudo ip link delete tun$i 2>/dev/null; done
+             sudo killall openvpn </p>
+               
+             for i in {0..10}; do sudo ip link delete tun$i 2>/dev/null; done </p>
 
 
         </div>
